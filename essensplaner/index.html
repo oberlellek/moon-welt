@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wochenplaner für Essen und Einkauf: ein paar Fragen beantworten, Wochenplan und fertige Einkaufsliste bekommen.">
+  <meta name="theme-color" content="#2f7d4f">
+  <title>Essensplaner</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥕</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="./" id="brand" class="brand"><span aria-hidden="true">🥕</span> Essensplaner</a>
+    <span class="topbar-sub">Wochenplan &amp; Einkaufsliste</span>
+  </header>
+
+  <main id="app" class="container">
+    <noscript><p class="notice">Der Essensplaner braucht JavaScript.</p></noscript>
+  </main>
+
+  <footer class="container footer no-print">
+    Alles bleibt in deinem Browser gespeichert – kein Konto, kein Server.
+  </footer>
+
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div id="dialog-body" class="dialog-body"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
